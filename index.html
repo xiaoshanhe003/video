@@ -139,7 +139,7 @@
 			let num=Math.random();
 			console.log("Grayscale is " + num*100 + '%, skewX is ' + num*180 + 'deg');
 			vid.classList.add("grayscale");
-			document.querySelector(".grayscale").style.filter='grayscale('+num*100+'%)';
+			document.querySelector(".grayscale").style.setProperty('filter','grayscale('+num*100+'%)');
 			vid.style.setProperty('transform','skewX('+num*180+'deg)');
 		}
 		</script> 
